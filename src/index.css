@@ -11,3 +11,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.greenBox::before {
+  content: '';
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: green;
+  vertical-align: middle;
+  border: 3px solid black;
+}
+
+.redBox::before {
+  content: '';
+  left: 100px;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: red;
+  vertical-align: middle;
+  border: 3px solid black;
+}
+
+.emptyBox::before {
+  content: '';
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  vertical-align: middle;
+  border: 3px solid black;
+}
+
+.ghe {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid orange;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.gheDaDat {
+  color: black;
+  border: 1px solid black;
+  background-color: yellow;
+  cursor:not-allowed;
+}
+
+.gheDuocChon {
+  color: white;
+  border: 1px solid white;
+  background-color: green;
+  
+}
+
+input[type=checkbox] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -2px;
+  left: -2px;
+  background-color: transparent;
+}
+
+.btnGhe {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
